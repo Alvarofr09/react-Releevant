@@ -39,3 +39,11 @@ export function ShoppingList() {
 
 	return <ul>{listItems}</ul>;
 }
+
+export function MyButton() {
+	function handleClick() {
+		alert("Has usado el boton");
+	}
+
+	return <button onClick={handleClick}>Hazme click</button>;
+}
