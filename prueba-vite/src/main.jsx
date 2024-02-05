@@ -51,3 +51,23 @@ export function MyButton() {
 
 	return <button onClick={handleClick}> Hiciste clic {count} veces</button>;
 }
+
+export function ButtonComp() {
+	const [count, setCount] = useState(0);
+
+	function handleClick() {
+		setCount(count + 1);
+	}
+
+	return (
+		<div>
+			<h1>Contadores que se actualizan separadamente</h1>
+			<MyButtonCompartido count={count} onClick={handleClick} />
+			<MyButtonCompartido count={count} onClick={handleClick} />
+		</div>
+	);
+}
+
+export function MyButtonCompartido({ count, onClick }) {
+	return <button onClick={onClick}>Hiciste clic {count} veces</button>;
+}
