@@ -12,5 +12,7 @@ root.render(
 		<h1>Los controladores se actualizan separadamente</h1>
 		<Componets.MyButton />
 		<Componets.MyButton />
+
+		<Componets.ButtonComp />
 	</>
 );
