@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const user = {
 	name: "Hedy Lamarr",
 	imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
@@ -41,9 +43,11 @@ export function ShoppingList() {
 }
 
 export function MyButton() {
+	const [count, setCount] = useState(0);
+
 	function handleClick() {
-		alert("Has usado el boton");
+		setCount(count + 1);
 	}
 
-	return <button onClick={handleClick}>Hazme click</button>;
+	return <button onClick={handleClick}> Hiciste clic {count} veces</button>;
 }
