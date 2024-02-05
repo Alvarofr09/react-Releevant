@@ -9,6 +9,8 @@ root.render(
 	<>
 		<Componets.Profile />
 		<Componets.ShoppingList />
+		<h1>Los controladores se actualizan separadamente</h1>
+		<Componets.MyButton />
 		<Componets.MyButton />
 	</>
 );
