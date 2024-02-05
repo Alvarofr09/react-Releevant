@@ -1,5 +1,12 @@
 function Square({ value }) {
-	return <button className="square">{value}</button>;
+	function handleClick() {
+		alert("Has pulsado el boton");
+	}
+	return (
+		<button className="square" onClick={handleClick}>
+			{value}
+		</button>
+	);
 }
 
 export default function Board() {
